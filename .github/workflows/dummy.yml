@@ -8,7 +8,6 @@ on: push
 jobs:
   job1:
     runs-on: ubuntu-latest
-    needs: job2
 #    if: github.ref == 'refs/head/release1'
     steps:
     - name: Step1Job1
@@ -20,6 +19,19 @@ jobs:
     steps:
     - name: Step1Job2
       run: echo "Step1Job2 "
+  job3:
+    runs-on: ubuntu-latest
+#    if: github.ref == 'refs/head/release1'
+    steps:
+    - name: Step1Job3
+      run: echo "Step1Job3"
+
+  job4:
+    runs-on: ubuntu-latest
+#   if: github.ref == 'refs/head/release3'
+    steps:
+    - name: Step1Job4
+      run: echo "Step1Job4 "
     
 
 
