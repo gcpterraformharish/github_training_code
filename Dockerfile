@@ -8,7 +8,7 @@ RUN tar xvf apache-tomcat-9.0.64.tar.gz
 RUN cp -r apache-tomcat-9.0.64/* /opt/tomcat/.
 
 
-COPY my-app.war /opt/tomcat/webapps/
+COPY /home/runner/work/github_training_code/github_training_code/target/my-app.war /opt/tomcat/webapps/
 
 EXPOSE 8080 
 
