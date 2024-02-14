@@ -8,6 +8,7 @@ on: push
 jobs:
   job1:
     runs-on: ubuntu-latest
+    needs: job2
 #    if: github.ref == 'refs/head/release1'
     steps:
     - name: Step1Job1
