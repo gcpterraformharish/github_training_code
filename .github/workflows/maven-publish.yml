@@ -44,4 +44,3 @@ jobs:
       uses: docker/build-push-action@v5.1.0
       with:
         context: .
-        push: false
