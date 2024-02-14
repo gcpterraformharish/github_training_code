@@ -1,0 +1,10 @@
+name: Dummy workflow
+
+on: push
+
+jobs:
+  job1:
+    runs-on: self-hosted
+    steps:
+    - name: Step1Job1
+      run: echo "Step1Job1"
