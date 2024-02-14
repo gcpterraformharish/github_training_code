@@ -34,6 +34,7 @@ jobs:
         pwd
         ls -l target
         cp target/my-app.war .
+        ls -l 
 
 #    - name: Publish to GitHub Packages Apache Maven
 #      run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
@@ -42,5 +43,5 @@ jobs:
     - name: Build and push Docker images
       uses: docker/build-push-action@v5.1.0
       with:
-        file: Dockerfile
-#        context: .
+        context: .
+        push: true
