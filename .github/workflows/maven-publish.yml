@@ -29,8 +29,7 @@ jobs:
     - name: check Files
       run: |
         pwd
-        ls -l
-        find / -name my-app.war
+        ls -l target
 
 #    - name: Publish to GitHub Packages Apache Maven
 #      run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
